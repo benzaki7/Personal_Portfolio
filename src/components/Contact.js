@@ -40,17 +40,17 @@ const Contact = () => {
         <section className="contact" id="contact">
             <h2 data-aos="fade-up" className="section-title">Contact</h2>
             <p data-aos="fade-up">Have any questions? I'd love to hear from you!</p>
-            <form data-netlify="true" name="contact" data-aos="fade-up" className="form" onSubmit={handleSubmit}>
+            <form netlify name="contact" data-aos="fade-up" className="form" onSubmit={handleSubmit}>
                 <div className="row">
-                    <input type="text" placeholder="Name" required value={name} onChange={(e) => setName(e.target.value)} />
+                    <input type="text" name="name" placeholder="Name" required value={name} onChange={(e) => setName(e.target.value)} />
                 </div>
 
                 <div className="row">
-                    <input type="email" placeholder="Email" required value={email} onChange={(e) => setEmail(e.target.value)} />
+                    <input type="email" name="email" placeholder="Email" required value={email} onChange={(e) => setEmail(e.target.value)} />
                 </div>
 
                 <div className="row">
-                    <textarea placeholder="Message" required value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+                    <textarea name="message" placeholder="Message" required value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
                 </div>
 
                 <div className="row">
