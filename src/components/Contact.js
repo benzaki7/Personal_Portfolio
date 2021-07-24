@@ -29,6 +29,9 @@ const Contact = () => {
             .catch(error => alert(error));
 
             e.preventDefault();
+            setName('')
+            setEmail('')
+            setMessage('')
         /* e.preventDefault();
         
         fetch("/", {
