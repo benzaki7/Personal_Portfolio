@@ -19,7 +19,7 @@ const Navbar = () => {
 
     return (
         <nav className="navBar" ref={menuNode}>
-            <h1><a href="#home" onClick={(e) => handlePageScroll(e, 'home')}>zakaria.B</a></h1>
+            <h1><a href="#home" onClick={(e) => handlePageScroll(e, 'home')}>Benzaki</a></h1>
             <FaBars className='menu-btn' onClick={handleMenuClick} />
             <div className={active ? 'links links-active' : 'links'}>
                 <a href="#home" onClick={(e) => (handleMenuClick(), handlePageScroll(e, 'home'))}>Home</a>

@@ -40,7 +40,7 @@ const Contact = () => {
         <section className="contact" id="contact">
             <h2 data-aos="fade-up" className="section-title">Contact</h2>
             <p data-aos="fade-up">Have any questions? I'd love to hear from you!</p>
-            <form netlify name="contact" data-aos="fade-up" className="form" onSubmit={handleSubmit}>
+            <form data-netlify="true" name="contact" data-aos="fade-up" className="form" onSubmit={handleSubmit}>
                 <div className="row">
                     <input type="text" placeholder="Name" required value={name} onChange={(e) => setName(e.target.value)} />
                 </div>
