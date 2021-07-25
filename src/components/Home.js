@@ -16,8 +16,8 @@ const Home = () => {
 
     return (
         <section className="home" id="home">
-            <h2 data-aos="fade-left">Hello, I'm <span>Zakaria Benkali</span></h2>
-            <h2 data-aos="fade-right">I'm a Front-End Developer.</h2>
+            <h2 data-aos="fade-right">Hello, I'm <span>Zakaria Benkali</span></h2>
+            <h2 data-aos="fade-left">I'm a Front-End Developer.</h2>
             <div data-aos="fade-up">
                 <a  href="#portfolio" onClick={(e) => handlePageScroll(e)}>See My Work</a>
             </div>    

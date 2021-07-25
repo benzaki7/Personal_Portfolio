@@ -12,6 +12,7 @@ const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [sent, setSent] = useState(false);
 
     const encode = (data) => {
         return Object.keys(data)
@@ -20,32 +21,24 @@ const Contact = () => {
     }
 
     const handleSubmit = (e) => {
+        setSent(true)
+
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", name, email, message })
             })
-            .then(() => alert("Success!"))
+            .then(() => setTimeout(() => {
+                setSent(false)
+            }, 1500))
             .catch(error => alert(error));
 
             e.preventDefault();
+
             setName('')
             setEmail('')
             setMessage('')
-        /* e.preventDefault();
-        
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", name, email, message })
-            })
-            .then(() => alert("Success!"))
-            .catch(error => alert(error));
-    
-
-        setName('')
-        setEmail('')
-        setMessage('') */
+            
     }
     
     return (
@@ -66,7 +59,7 @@ const Contact = () => {
                 </div>
 
                 <div className="row">
-                    <input type="submit" value="Submit" />
+                    <input type="submit" value={sent ? 'Submitted': 'Submit'} style={{backgroundColor: sent ? '#2b9348' : ''}} />
                 </div>
             </form>
             <div data-aos="fade" className="social">

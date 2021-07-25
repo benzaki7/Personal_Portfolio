@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 
 const Projects = () => {
     AOS.init({
-        offset: 350,
+        offset: 500,
         duration: 1000,
         once: true,
     });

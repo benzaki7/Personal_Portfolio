@@ -24,7 +24,7 @@ export const projects = [
         link2: "https://github.com/benzaki7/URL-Shortner",
     },
     {
-        title: "Websol",
+        title: "WEBSOL",
         stack: "Html - Css - Javascript",
         description: "Websol is a tech agency that provides modern web solutions",
         image: "images/4.png",
