@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 
 const Contact = () => {
     AOS.init({
-        offset: 100,
+        offset: 80,
         duration: 1000,
         once: true,
     });

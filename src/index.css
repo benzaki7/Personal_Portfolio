@@ -12,7 +12,7 @@
 /* Scrollbar */
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -45,15 +45,15 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 80px;
-  /* background-color: #161A1D; */
+  padding: 12px 80px;
+  background-color: #161A1D;
   z-index: 99;
   transition: .35s ease;
 }
-.nav-scrolled {
+/* .nav-scrolled {
   padding: 12px 80px;
   background-color: #161A1D;
-}
+} */
 .navBar h1 {
   font-size: 2rem;
   font-weight: 600;
@@ -143,21 +143,50 @@ body {
 .home span {
   color: #E63946;
 }
-
-.home a {
-  font-size: 1.1rem;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-  padding: 8px 12px;
-  background-color: transparent;
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF;
-  transition: .35s ease;
+.btn-group {
+  z-index: 10;
+  display: flex;
 }
 
-.home a:hover {
-  background-color: #E63946;
-  border: 1px solid #E63946;
+.btn {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 45px;
+  width: 160px; 
+  margin: 0 10px;
+  color: #FFFFFF;
+  background-color: transparent;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.btn svg {
+  position: absolute;
+  height: 45px;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn rect {
+  fill: none;
+  stroke: #E63946;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+  transition: all 0.35s linear;
+}
+
+.btn:hover {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.btn:hover rect {
+  stroke: #FFFFFF;
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .particles {
@@ -166,8 +195,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.8;
-  /* border: 3px solid red; */
+  opacity: 0.7;
 }
 
 /* Portfolio */
@@ -186,7 +214,7 @@ body {
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #6C757D;
+  color: #495057;
   position: relative;
   display: inline-block;
   text-align: center;
@@ -200,7 +228,7 @@ body {
   height: 1px;
   bottom: -5px;
   left: 20%; 
-  border-bottom: 2px solid #6C757D;
+  border-bottom: 2px solid #495057;
 }
 
 .portfolio p {
@@ -290,7 +318,7 @@ body {
 .about {
     border-top: 1px solid #D3D3D3  ;
     scroll-margin-top: 50px;
-    min-height: 50vh;
+    min-height: 70vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -306,11 +334,16 @@ body {
 }
 
 .about p {
-    text-align: start;
+    text-align: center;
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 2;
     color: #495057;
+    padding: 10px 0;
+}
+
+.about a {
+  color: #0077b6;
 }
 
 /* Contact */
@@ -490,13 +523,20 @@ footer {
   .home h2 {
     font-size: 1.8rem;
 }
-.home a {
-  font-size: .9rem;
-  padding: 7px 10px;
+  .btn-group {
+    flex-direction: column;
 }
+  .btn {
+    font-size: 1rem;
+    margin: 10px 0;
+    width: 140px; 
+  }
+  .btn:hover rect {  
+    stroke-dasharray: 15, 280;
+  }
+  
 .about p {
   font-size: 1rem;
-  text-align: center;
 }
 .row {
   width: 85%;

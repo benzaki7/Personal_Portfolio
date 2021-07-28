@@ -16,10 +16,10 @@ const Navbar = () => {
 
     const handlePageScroll = (e, id) => {
         e && e.preventDefault();
-        const element = document.getElementById(id).scrollIntoView();
+        document.getElementById(id).scrollIntoView();
     }
 
-    const toggleBackground = () => {
+/*     const toggleBackground = () => {
         const scrolled = document.documentElement.scrollTop;
         if (scrolled > 100) {
             setScroll(true)
@@ -28,10 +28,10 @@ const Navbar = () => {
             setScroll(false)
         }
     };
-    window.addEventListener('scroll', toggleBackground);
+    window.addEventListener('scroll', toggleBackground); */
 
     return (
-        <nav className={scroll ? 'navBar nav-scrolled' : 'navBar'} ref={menuNode}>
+        <nav className="navBar" ref={menuNode}>
             <h1><a href="#home" onClick={(e) => handlePageScroll(e, 'home')}>Benzaki</a></h1>
             <FaBars className='menu-btn' onClick={handleMenuClick} />
             <div className={active ? 'links links-active' : 'links'}>
