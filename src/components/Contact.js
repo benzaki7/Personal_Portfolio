@@ -63,8 +63,8 @@ const Contact = () => {
                 </div>
             </form>
             <div data-aos="fade" className="social">
-                <a target="_blank" href="https://twitter.com/Zaki_Ben77">Twitter</a>
-                <a target="_blank" href="https://github.com/benzaki7">Github</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Zaki_Ben77">Twitter</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/benzaki7">Github</a>
                 <a href="mailto:benkalizakaria@gmail.com">Email</a>
             </div>
         </section>

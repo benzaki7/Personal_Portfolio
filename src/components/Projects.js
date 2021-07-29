@@ -20,8 +20,8 @@ const Projects = () => {
                         <h4>{project.stack}</h4>
                         <p>{project.description}</p>
                         <div>
-                            <a target="_blank" href={project.link1}>Visit website</a>
-                            <a target="_blank" href={project.link2}>Source Code</a>
+                            <a target="_blank" rel="noopener noreferrer" href={project.link1}>Visit website</a>
+                            <a target="_blank" rel="noopener noreferrer" href={project.link2}>Source Code</a>
                         </div>
                     </div>
                 </div>

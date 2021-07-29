@@ -19,14 +19,14 @@ const Home = () => {
         <section className="home" id="home">
             <h2 data-aos="fade-right">Hello, I'm <span>Zakaria Benkali</span>.</h2>
             <h2 data-aos="fade-left">I'm a Frontend Developer.</h2>
-            <div className="btn-group" >
-                <a data-aos="fade-right" className="btn" href="#portfolio" onClick={(e) => handlePageScroll(e, 'portfolio')} >
+            <div data-aos="fade-up" className="btn-group" >
+                <a className="btn" href="#portfolio" onClick={(e) => handlePageScroll(e, 'portfolio')} >
                     <svg>
                         <rect x="0" y="0" fill="none" width="100%" height="100%"/>
                     </svg>
                     See My Work
                 </a>
-                <a data-aos="fade-left" className="btn" href="#contact" onClick={(e) => handlePageScroll(e, 'contact')}>
+                <a className="btn" href="#contact" onClick={(e) => handlePageScroll(e, 'contact')}>
                     <svg>
                         <rect x="0" y="0" fill="none" width="100%" height="100%"/>
                     </svg>

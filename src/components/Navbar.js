@@ -4,7 +4,6 @@ import { FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
     const [active, setActive] = useState(false);  // this state checks if menu is open or colsed
-    const [scroll, setScroll] = useState(false);
 
     const menuNode = useRef();
 
@@ -18,17 +17,6 @@ const Navbar = () => {
         e && e.preventDefault();
         document.getElementById(id).scrollIntoView();
     }
-
-/*     const toggleBackground = () => {
-        const scrolled = document.documentElement.scrollTop;
-        if (scrolled > 100) {
-            setScroll(true)
-        } 
-        else {
-            setScroll(false)
-        }
-    };
-    window.addEventListener('scroll', toggleBackground); */
 
     return (
         <nav className="navBar" ref={menuNode}>
