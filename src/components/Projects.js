@@ -5,15 +5,16 @@ import 'aos/dist/aos.css';
 
 const Projects = () => {
     AOS.init({
-        offset: 500,
-        duration: 1000,
+        offset: 100,
+        delay: 0,
+        duration: 2000,
         once: true,
     });
 
     return (
         <div className="projects">
             {projects.map((project) => (
-                <div data-aos="fade-up" className="project" key={project.title}>
+                <div data-aos="fade-up" data-aos-offset="250" className="project" key={project.title}>
                     <img src={project.image} alt="project thumbnail"/>
                     <div className="info">
                         <h3>{project.title}</h3>

@@ -48,12 +48,8 @@ body {
   padding: 12px 80px;
   background-color: #161A1D;
   z-index: 99;
-  transition: .35s ease;
 }
-/* .nav-scrolled {
-  padding: 12px 80px;
-  background-color: #161A1D;
-} */
+
 .navBar h1 {
   font-size: 2rem;
   font-weight: 600;
@@ -256,7 +252,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 80vw;
-  padding: 80px 20px;
+  padding: 50px 20px;
   color: #495057;
 }
 

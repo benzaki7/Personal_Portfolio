@@ -4,7 +4,7 @@ export const projects = [
         stack: "React - React Router - React Hooks - Rest API",
         description: "CinePalace is a Movies website that display popular movies, trending movies and allow a search and browse functionality.",
         image: "images/1.png",
-        link1: "https://cinepalace.netlify.app",
+        link1: "https://cinepalace.netlify.app/",
         link2: "https://github.com/benzaki7/CinePalace",
     },
     {

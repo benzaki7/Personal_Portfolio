@@ -30,7 +30,7 @@ const Contact = () => {
             })
             .then(() => setTimeout(() => {
                 setSent(false)
-            }, 1500))
+            }, 1000))
             .catch(error => alert(error));
 
             e.preventDefault();
@@ -43,9 +43,9 @@ const Contact = () => {
     
     return (
         <section className="contact" id="contact">
-            <h2 data-aos="fade-up" className="section-title">Contact</h2>
-            <p data-aos="fade-up">Have any questions? I'd love to hear from you!</p>
-            <form data-aos="fade-up" className="form" onSubmit={handleSubmit}>
+            <h2 data-aos="fade-up" data-aos-offset="250" className="section-title">Contact</h2>
+            <p data-aos="fade-up" data-aos-offset="250">Have any questions? I'd love to hear from you!</p>
+            <form data-aos="fade-up" data-aos-offset="250" className="form" onSubmit={handleSubmit}>
                 <div className="row">
                     <input type="text" name="name" placeholder="Name" required value={name} onChange={(e) => setName(e.target.value)} />
                 </div>
@@ -62,7 +62,7 @@ const Contact = () => {
                     <input type="submit" value={sent ? 'Submitted': 'Submit'} style={{backgroundColor: sent ? '#2b9348' : ''}} />
                 </div>
             </form>
-            <div data-aos="fade" className="social">
+            <div data-aos="fade" data-aos-offset="50" className="social">
                 <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Zaki_Ben77">Twitter</a>
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/benzaki7">Github</a>
                 <a href="mailto:benkalizakaria@gmail.com">Email</a>
