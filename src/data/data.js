@@ -8,6 +8,14 @@ export const projects = [
         link2: "https://github.com/benzaki7/CinePalace",
     },
     {
+        title: "WeatherCast",
+        stack: "React - React Hooks - Rest API",
+        description: "WeatherCast provides current weather for the users current location and it provides a search functionality by city name",
+        image: "images/6.png",
+        link1: "https://weathercast24.netlify.app/",
+        link2: "https://github.com/benzaki7/WeatherCast",
+    },
+    {
         title: "Bookland",
         stack: "Html - Css - Javascript",
         description: "Bookland Is A Library Where You Can Browse Books By Different Genres.",
