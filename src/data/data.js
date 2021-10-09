@@ -10,7 +10,7 @@ export const projects = [
     {
         title: "WeatherCast",
         stack: "React - React Hooks - Rest API",
-        description: "WeatherCast provides current weather for the users current location and it provides a search functionality by city name",
+        description: "This is a Location-based, real-time local weather forecast application, it also provides a search functionality by city name.",
         image: "images/6.png",
         link1: "https://weathercast24.netlify.app/",
         link2: "https://github.com/benzaki7/WeatherCast",
