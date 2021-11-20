@@ -18,7 +18,7 @@ const About = () => {
         <section className="about" id="about">
             <h2 data-aos="fade-up" data-aos-offset="250" className="section-title">About</h2>
             <div data-aos="fade-up" data-aos-offset="250" className="about-me">
-                <p>Hello! My name is Zakaria, I'm a self taught frontend web developer based in Algeria with a background in civil engineering.</p>
+                <p>Hello! My name is Zakaria, I'm a self taught frontend web developer currently based in Pennsylvania with a background in civil engineering.</p>
 
                 <p>In April 2020 I started coding for fun, and what started as a hobby quickly turned into an obsession for me, So I've become committed to learning to code and evolve everyday. I am passionate about coding and I love what I do.</p>
         
